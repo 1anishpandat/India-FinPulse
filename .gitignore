@@ -1,5 +1,8 @@
-*.db
-*.csv
+﻿data/processed/transactions.csv
+data/processed/bank_scorecard.csv
+data/processed/monthly_agg.csv
+database/finpulse.db
 __pycache__/
-venv/
+*.pyc
+*.pyo
 .env
