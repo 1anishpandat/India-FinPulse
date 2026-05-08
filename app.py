@@ -141,12 +141,8 @@ if "Overview" in page:
     render()
 
 elif "Merchant" in page:
-    # Day 3 — not built yet
-    st.title("🏪 Merchant Intelligence")
-    st.info("🚧 Coming on Day 3 — Merchant category spending patterns, "
-            "P2P vs P2M split analysis, top merchant categories by state.")
-    st.image("https://via.placeholder.com/800x400?text=Merchant+Intelligence+%E2%80%94+Coming+Day+3",
-             use_column_width=True)
+    from views.merchant import render
+    render()
 
 elif "Fraud" in page:
     # Day 4 — not built yet
