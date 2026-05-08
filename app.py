@@ -135,3 +135,29 @@ with st.sidebar:
 #   Importing only the needed view keeps startup fast.
 #   This pattern is called lazy importing.
 # =============================================================
+
+if "Overview" in page:
+    from views.overview import render
+    render()
+
+elif "Merchant" in page:
+    from views.merchant import render
+    render()
+
+elif "Fraud" in page:
+    # Day 4 — not built yet
+    st.title("🚨 Fraud Signal Detection")
+    st.info("🚧 Coming on Day 4 — IQR + Z-score anomaly detection, "
+            "fraud heatmaps by state and bank, threshold tuning.")
+
+elif "Forecasting" in page:
+    # Day 5 — not built yet
+    st.title("🔮 Forecasting Engine")
+    st.info("🚧 Coming on Day 5 — ARIMA model predicting next 6 months "
+            "of UPI volume with confidence intervals.")
+
+elif "Scorecard" in page:
+    # Day 6 — not built yet
+    st.title("🏦 Bank Performance Scorecard")
+    st.info("🚧 Coming on Day 6 — Ranking all banks on UPI metrics "
+            "with trend lines and benchmark comparisons.")
